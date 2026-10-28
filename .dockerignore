@@ -1,0 +1,12 @@
+.git
+.github
+.claude
+.env
+data
+datasets
+docs
+frontend/node_modules
+**/__pycache__
+**/*.egg-info
+**/.pytest_cache
+**/.ruff_cache
