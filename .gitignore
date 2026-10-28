@@ -1,0 +1,40 @@
+# Data: sessions, datasets, databases, models (never commit team data)
+data/
+datasets/
+*.duckdb
+*.duckdb.wal
+*.onnx
+models/
+examples/out/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.benchmarks/
+.coverage
+htmlcov/
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# Config with secrets / machine-specific values
+.env
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/settings.local.json
