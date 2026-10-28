@@ -1,0 +1,10 @@
+line-length = 100
+target-version = "py312"
+src = ["backend"]  # so `sensebench` imports sort as first-party
+
+[lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "NPY"]
+
+[lint.per-file-ignores]
+# typer.Option(...) in argument defaults is the documented Typer pattern
+"backend/sensebench/cli.py" = ["B008"]
